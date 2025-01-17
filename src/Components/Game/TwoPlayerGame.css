@@ -1,0 +1,25 @@
+.tankimageplayerselection {
+    position: absolute;  /* Fotoğrafı konumlandırmak için absolute kullanılıyor */
+    top: 0;  /* Üstten sıfırlanmış */
+    left: 0;  /* Soldan sıfırlanmış */
+    width: 100%;  /* Genişlik %100 */
+    height: 100%;  /* Yükseklik %100 (ekranı tamamen kaplar) */
+    object-fit: cover;  /* Fotoğrafın alanı tam olarak kaplaması için */
+    opacity: 0.6;  /* Fotoğrafın opaklık değeri */
+    z-index: -1;  /* Fotoğrafı tüm içeriklerin arkasına yerleştirir */
+}
+
+
+.PlayerNamesButtonBack{
+    width: 20%;
+    top: 20%;
+    margin-left: 20%;
+}
+
+.PlayerNamesButtonCont{
+    width: 20%;
+    top: 20%;
+    margin-left: 11.5%; 
+}
+
+
