@@ -1,0 +1,17 @@
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\bin\Debug\net8.0\BattleshipAPI.Infrastructure.deps.json
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\bin\Debug\net8.0\BattleshipAPI.Infrastructure.runtimeconfig.json
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\bin\Debug\net8.0\BattleshipAPI.Infrastructure.dll
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\bin\Debug\net8.0\BattleshipAPI.Infrastructure.pdb
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\bin\Debug\net8.0\BattleshipAPI.Application.dll
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\bin\Debug\net8.0\BattleshipAPI.Domain.dll
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\bin\Debug\net8.0\BattleshipAPI.Application.pdb
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\bin\Debug\net8.0\BattleshipAPI.Domain.pdb
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\obj\Debug\net8.0\BattleshipAPI.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\obj\Debug\net8.0\BattleshipAPI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\obj\Debug\net8.0\BattleshipAPI.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\obj\Debug\net8.0\Battlesh.7767C7F9.Up2Date
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\obj\Debug\net8.0\BattleshipAPI.Infrastructure.dll
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\obj\Debug\net8.0\refint\BattleshipAPI.Infrastructure.dll
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\obj\Debug\net8.0\BattleshipAPI.Infrastructure.pdb
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\obj\Debug\net8.0\BattleshipAPI.Infrastructure.genruntimeconfig.cache
+C:\Users\Onur\source\repos\Battleship API\Infrastructure\Infrastructure\obj\Debug\net8.0\ref\BattleshipAPI.Infrastructure.dll
