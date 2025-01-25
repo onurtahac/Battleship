@@ -3,7 +3,6 @@ C:\Users\Onur\source\repos\Battleship API\obj\Debug\net8.0\Battleship API.Genera
 C:\Users\Onur\source\repos\Battleship API\obj\Debug\net8.0\Battleship API.AssemblyInfoInputs.cache
 C:\Users\Onur\source\repos\Battleship API\obj\Debug\net8.0\Battleship API.AssemblyInfo.cs
 C:\Users\Onur\source\repos\Battleship API\obj\Debug\net8.0\Battleship API.csproj.CoreCompileInputs.cache
-C:\Users\Onur\source\repos\Battleship API\obj\Debug\net8.0\Battleship API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Onur\source\repos\Battleship API\obj\Debug\net8.0\Battleship API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Onur\source\repos\Battleship API\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Onur\source\repos\Battleship API\bin\Debug\net8.0\appsettings.json
@@ -140,3 +139,6 @@ C:\Users\Onur\source\repos\Battleship API\obj\Debug\net8.0\refint\Battleship API
 C:\Users\Onur\source\repos\Battleship API\obj\Debug\net8.0\Battleship API.pdb
 C:\Users\Onur\source\repos\Battleship API\obj\Debug\net8.0\Battleship API.genruntimeconfig.cache
 C:\Users\Onur\source\repos\Battleship API\obj\Debug\net8.0\ref\Battleship API.dll
+C:\Users\Onur\source\repos\Battleship API\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Onur\source\repos\Battleship API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Onur\source\repos\Battleship API\obj\Debug\net8.0\Battleship API.MvcApplicationPartsAssemblyInfo.cs

@@ -49,6 +49,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -186,6 +190,9 @@
             "projectReferences": {
               "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj": {
                 "projectPath": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj"
+              },
+              "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Domain\\BattleshipAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Domain\\BattleshipAPI.Domain.csproj"
               }
             }
           }

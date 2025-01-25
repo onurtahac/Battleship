@@ -1,21 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BattleshipAPI.Application.DTOs;
+﻿using BattleshipAPI.Application.DTOs;
+using BattleshipAPI.Domain.Entites;
 using Microsoft.EntityFrameworkCore;
-
 
 namespace BattleshipAPI.Infrastructure.Parsistence
 {
-
-
     public class SqlDbContext : DbContext
     {
-        public DbSet<Users> Users { get; set; }
-        public DbSet<TwoPlayerGame> TwoPlayerGame { get; set; }
-
         public SqlDbContext(DbContextOptions<SqlDbContext> options) : base(options)
          {
          }
@@ -26,14 +16,15 @@ namespace BattleshipAPI.Infrastructure.Parsistence
             base.OnModelCreating(modelBuilder);
 
             // Professor
-            modelBuilder.Entity<Users>()
+            modelBuilder.Entity<User>()
                 .HasKey(u => u.UserId);
 
-            modelBuilder.Entity<TwoPlayerGame>()
-                .HasKey(t => t.GameId);
+            //modelBuilder.Entity<TwoPlayerGame>()
+            //    .HasKey(t => t.GameId);
         }
+
+        public DbSet<User> Users { get; set; }
+        //public DbSet<TwoPlayerGame> TwoPlayerGames { get; set; }
+        //public DbSet<SoloGame> SoloGame { get; set; }
     }
-
-    
-
 }

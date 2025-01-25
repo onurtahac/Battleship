@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\BattleshipAPI.Application\BattleshipAPI.Application.csproj" />
+    <ProjectReference Include="..\..\Core\BattleshipAPI.Domain\BattleshipAPI.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

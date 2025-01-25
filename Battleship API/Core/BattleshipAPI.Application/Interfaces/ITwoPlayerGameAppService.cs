@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BattleshipAPI.Application.Interfaces
 {
-    internal class ITwoPlayerGameAppService
+    public class ITwoPlayerGameAppService
     {
     }
 }

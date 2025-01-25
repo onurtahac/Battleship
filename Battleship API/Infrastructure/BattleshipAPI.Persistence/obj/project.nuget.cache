@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8s0Rs7z18gY/GUXrttNZ9I5aXMdBsLgzhA70mCg8+W6EOWQJEXYD0eKFdA3w52Og+XQU7Y6eNgy/az1YJvE8jg==",
+  "dgSpecHash": "OgKpIJXCHZ6SoYCR5ffilhUBgj/HhpPLDbxSQBE+PxdSSdP7AD5i+ivVT3kRYcaEK4xQkkluzfk2qve1aFhEmw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Infrastructure\\BattleshipAPI.Persistence\\BattleshipAPI.Persistence.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Onur\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

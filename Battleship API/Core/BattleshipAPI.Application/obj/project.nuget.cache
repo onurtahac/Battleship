@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RgjdS+RxROUQ76q4e5jrXxEeENfmeCm+f31/+iZ9CjpUrABsl4c3Msh5SCWrI0Wmb/fSdtXTfpeOMNscoQEkJA==",
+  "dgSpecHash": "SLc5w2JDLDf79Tr3rkJ0WKLXN1bxmcR39XrfGPiYzqJHD9B9Su8uKf2Uwh5gZUFzQ5EPo3+YZiYUSbE1D+nYZg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Onur\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Onur\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
