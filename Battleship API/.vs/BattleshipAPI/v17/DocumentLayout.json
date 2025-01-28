@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Onur\\source\\repos\\Battleship API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FBB906B-6B86-411F-95B6-56E73F6C9EB9}|Infrastructure\\Infrastructure\\BattleshipAPI.Infrastructure.csproj|c:\\users\\onur\\source\\repos\\battleship api\\infrastructure\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FBB906B-6B86-411F-95B6-56E73F6C9EB9}|Infrastructure\\Infrastructure\\BattleshipAPI.Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|c:\\users\\onur\\source\\repos\\battleship api\\core\\battleshipapi.application\\services\\userappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|solutionrelative:core\\battleshipapi.application\\services\\userappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|c:\\users\\onur\\source\\repos\\battleship api\\core\\battleshipapi.application\\services\\twoplayergameappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|solutionrelative:core\\battleshipapi.application\\services\\twoplayergameappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|c:\\users\\onur\\source\\repos\\battleship api\\core\\battleshipapi.application\\interfaces\\itwoplayergameappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|solutionrelative:core\\battleshipapi.application\\interfaces\\itwoplayergameappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE6F0270-6131-4EF3-8D21-29C31F6BC4FE}|Battleship API.csproj|c:\\users\\onur\\source\\repos\\battleship api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6F0270-6131-4EF3-8D21-29C31F6BC4FE}|Battleship API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{639EFBA9-4D2F-4614-8951-64D45C7F0999}|Core\\BattleshipAPI.Domain\\BattleshipAPI.Domain.csproj|c:\\users\\onur\\source\\repos\\battleship api\\core\\battleshipapi.domain\\interfaces\\ishiprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{639EFBA9-4D2F-4614-8951-64D45C7F0999}|Core\\BattleshipAPI.Domain\\BattleshipAPI.Domain.csproj|solutionrelative:core\\battleshipapi.domain\\interfaces\\ishiprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|c:\\users\\onur\\source\\repos\\battleship api\\core\\battleshipapi.application\\services\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|solutionrelative:core\\battleshipapi.application\\services\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{639EFBA9-4D2F-4614-8951-64D45C7F0999}|Core\\BattleshipAPI.Domain\\BattleshipAPI.Domain.csproj|c:\\users\\onur\\source\\repos\\battleship api\\core\\battleshipapi.domain\\entities\\coordinates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{639EFBA9-4D2F-4614-8951-64D45C7F0999}|Core\\BattleshipAPI.Domain\\BattleshipAPI.Domain.csproj|solutionrelative:core\\battleshipapi.domain\\entities\\coordinates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{639EFBA9-4D2F-4614-8951-64D45C7F0999}|Core\\BattleshipAPI.Domain\\BattleshipAPI.Domain.csproj|c:\\users\\onur\\source\\repos\\battleship api\\core\\battleshipapi.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{639EFBA9-4D2F-4614-8951-64D45C7F0999}|Core\\BattleshipAPI.Domain\\BattleshipAPI.Domain.csproj|solutionrelative:core\\battleshipapi.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|c:\\users\\onur\\source\\repos\\battleship api\\core\\battleshipapi.application\\interfaces\\ishipsappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|solutionrelative:core\\battleshipapi.application\\interfaces\\ishipsappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|c:\\users\\onur\\source\\repos\\battleship api\\core\\battleshipapi.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|solutionrelative:core\\battleshipapi.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FBB906B-6B86-411F-95B6-56E73F6C9EB9}|Infrastructure\\Infrastructure\\BattleshipAPI.Infrastructure.csproj|c:\\users\\onur\\source\\repos\\battleship api\\infrastructure\\infrastructure\\repositories\\shiprepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FBB906B-6B86-411F-95B6-56E73F6C9EB9}|Infrastructure\\Infrastructure\\BattleshipAPI.Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure\\repositories\\shiprepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6F0270-6131-4EF3-8D21-29C31F6BC4FE}|Battleship API.csproj|c:\\users\\onur\\source\\repos\\battleship api\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6F0270-6131-4EF3-8D21-29C31F6BC4FE}|Battleship API.csproj|solutionrelative:controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|c:\\users\\onur\\source\\repos\\battleship api\\core\\battleshipapi.application\\dtos\\coordinatesdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|solutionrelative:core\\battleshipapi.application\\dtos\\coordinatesdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|c:\\users\\onur\\source\\repos\\battleship api\\core\\battleshipapi.application\\interfaces\\icoordianteappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3122A63-8488-4D95-84BA-757B4E9CF7AB}|Core\\BattleshipAPI.Application\\BattleshipAPI.Application.csproj|solutionrelative:core\\battleshipapi.application\\interfaces\\icoordianteappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,6 +49,20 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Coordinates.cs",
+              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Domain\\Entities\\Coordinates.cs",
+              "RelativeDocumentMoniker": "Core\\BattleshipAPI.Domain\\Entities\\Coordinates.cs",
+              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Domain\\Entities\\Coordinates.cs",
+              "RelativeToolTip": "Core\\BattleshipAPI.Domain\\Entities\\Coordinates.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T08:28:12.969Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:648089431:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
             },
@@ -50,90 +72,107 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ITwoPlayerGameAppService.cs",
-              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Interfaces\\ITwoPlayerGameAppService.cs",
-              "RelativeDocumentMoniker": "Core\\BattleshipAPI.Application\\Interfaces\\ITwoPlayerGameAppService.cs",
-              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Interfaces\\ITwoPlayerGameAppService.cs",
-              "RelativeToolTip": "Core\\BattleshipAPI.Application\\Interfaces\\ITwoPlayerGameAppService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "IShipsAppService.cs",
+              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Interfaces\\IShipsAppService.cs",
+              "RelativeDocumentMoniker": "Core\\BattleshipAPI.Application\\Interfaces\\IShipsAppService.cs",
+              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Interfaces\\IShipsAppService.cs",
+              "RelativeToolTip": "Core\\BattleshipAPI.Application\\Interfaces\\IShipsAppService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T20:58:27.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserAppService.cs",
-              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Services\\UserAppService.cs",
-              "RelativeDocumentMoniker": "Core\\BattleshipAPI.Application\\Services\\UserAppService.cs",
-              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Services\\UserAppService.cs",
-              "RelativeToolTip": "Core\\BattleshipAPI.Application\\Services\\UserAppService.cs",
-              "ViewState": "AQIAAHcAAAAAAAAAAAAEwIcAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T20:44:47.922Z",
+              "WhenOpened": "2025-01-28T08:49:21.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAASwBYAAAAAAAAA",
+              "Title": "TwoPlayerGameAppService.cs",
+              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Services\\TwoPlayerGameAppService.cs",
+              "RelativeDocumentMoniker": "Core\\BattleshipAPI.Application\\Services\\TwoPlayerGameAppService.cs",
+              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Services\\TwoPlayerGameAppService.cs",
+              "RelativeToolTip": "Core\\BattleshipAPI.Application\\Services\\TwoPlayerGameAppService.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAUwFwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T20:45:19.496Z",
+              "WhenOpened": "2025-01-28T08:29:42.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IShipRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Domain\\Interfaces\\IShipRepository.cs",
+              "RelativeDocumentMoniker": "Core\\BattleshipAPI.Domain\\Interfaces\\IShipRepository.cs",
+              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Domain\\Interfaces\\IShipRepository.cs",
+              "RelativeToolTip": "Core\\BattleshipAPI.Domain\\Interfaces\\IShipRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:07:38.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShipRepository .cs",
+              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Infrastructure\\Infrastructure\\Repositories\\ShipRepository .cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure\\Repositories\\ShipRepository .cs",
+              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Infrastructure\\Infrastructure\\Repositories\\ShipRepository .cs",
+              "RelativeToolTip": "Infrastructure\\Infrastructure\\Repositories\\ShipRepository .cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwEAAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:11:53.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ICoordianteAppService.cs",
+              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Interfaces\\ICoordianteAppService.cs",
+              "RelativeDocumentMoniker": "Core\\BattleshipAPI.Application\\Interfaces\\ICoordianteAppService.cs",
+              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Interfaces\\ICoordianteAppService.cs",
+              "RelativeToolTip": "Core\\BattleshipAPI.Application\\Interfaces\\ICoordianteAppService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T08:48:47.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ITwoPlayerGameAppService.cs",
+              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Interfaces\\ITwoPlayerGameAppService.cs",
+              "RelativeDocumentMoniker": "Core\\BattleshipAPI.Application\\Interfaces\\ITwoPlayerGameAppService.cs",
+              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Interfaces\\ITwoPlayerGameAppService.cs",
+              "RelativeToolTip": "Core\\BattleshipAPI.Application\\Interfaces\\ITwoPlayerGameAppService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAgwB0AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T08:30:56.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CoordinatesDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\DTOs\\CoordinatesDTOs.cs",
+              "RelativeDocumentMoniker": "Core\\BattleshipAPI.Application\\DTOs\\CoordinatesDTOs.cs",
+              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\DTOs\\CoordinatesDTOs.cs",
+              "RelativeToolTip": "Core\\BattleshipAPI.Application\\DTOs\\CoordinatesDTOs.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T08:23:48.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\DTOs\\UserDTO.cs",
-              "RelativeDocumentMoniker": "Core\\BattleshipAPI.Application\\DTOs\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\DTOs\\UserDTO.cs",
-              "RelativeToolTip": "Core\\BattleshipAPI.Application\\DTOs\\UserDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GameController.cs",
+              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Controllers\\GameController.cs",
+              "RelativeToolTip": "Controllers\\GameController.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAADwv2oAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T20:45:02.884Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Core\\BattleshipAPI.Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "Core\\BattleshipAPI.Domain\\Entities\\User.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T19:46:56.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Services\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "Core\\BattleshipAPI.Application\\Services\\PasswordHasher.cs",
-              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Core\\BattleshipAPI.Application\\Services\\PasswordHasher.cs",
-              "RelativeToolTip": "Core\\BattleshipAPI.Application\\Services\\PasswordHasher.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAnwBQAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T19:25:28.878Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Onur\\source\\repos\\Battleship API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T19:20:55.58Z"
+              "WhenOpened": "2025-01-28T08:23:15.94Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,5 +1,6 @@
 ﻿using BattleshipAPI.Application.DTOs;
 using BattleshipAPI.Domain.Entites;
+using BattleshipAPI.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace BattleshipAPI.Infrastructure.Parsistence
@@ -24,6 +25,10 @@ namespace BattleshipAPI.Infrastructure.Parsistence
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Coordinates> Coordinates { get; set; }
+        public DbSet<Ships> Ships { get; set; }
+
+
         //public DbSet<TwoPlayerGame> TwoPlayerGames { get; set; }
         //public DbSet<SoloGame> SoloGame { get; set; }
     }

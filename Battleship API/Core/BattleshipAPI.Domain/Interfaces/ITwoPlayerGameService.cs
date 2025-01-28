@@ -24,5 +24,7 @@ namespace BattleshipAPI.Domain.Interfaces
 
         // Tankların yerleştirildiği pozisyonları getirir
         Task<IEnumerable<int>> GetTankPositionsAsync(int gameId, int playerId);
+        Task<bool> CheckHitAsync(int row, int col, int gameId, int userId);
+        Task<bool> CheckGameOverAsync(int gameId);
     }
 }
