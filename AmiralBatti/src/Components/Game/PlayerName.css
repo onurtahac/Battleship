@@ -1,0 +1,52 @@
+.PlayerNames {
+    margin: 0px;
+    padding: 0px;
+    position: relative; /* Input ve görsel arasında ilişki kurmak için relative */
+}
+
+.playernameh2 {
+    color: aliceblue;
+    width: 50%;
+    margin: 1em auto; /* Ortalamak için margin ayarlandı */
+    text-align: center; /* Metin ortalandı */
+    font-size: 1.2em; /* Font boyutu optimize edildi */
+}
+
+.Player1input,
+.Player2input {
+    width: 50%;
+    top: 20%;
+    margin-left: 20%;
+    color: aliceblue;
+}
+
+.PlayerNameh1 {
+    margin: 1em auto; /* Ortalandı */
+    color: white;
+    text-align: center;
+    font-size: 2em; /* Daha büyük bir başlık boyutu */
+}
+
+.tankimageplayerName {
+    opacity: 0.6;
+    width: 100%;
+    height: 100vh; /* Görüntü ekran yüksekliğini kaplar */
+    position: fixed; /* Arka plan için absolute */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Görüntüyü arka plana taşır */
+}
+
+
+
+.PlayerNamesButtonBack{
+    width: 20%;
+    top: 20%;
+    margin-left: 20%;
+}
+
+.PlayerNamesButtonCont{
+    width: 20%;
+    top: 20%;
+    margin-left: 11.5%; 
+}

@@ -24,7 +24,7 @@ export default function PlayerNames({ onStartGame }) {
 
   return (
     <div className="PlayerNames">
-      <img className='tankimageplayerselection' src="Public/Photos/Soliders.jpeg" alt="" />
+      <img className='tankimageplayerName' src="Public/Photos/Soliders.jpeg" alt="" />
       <h1 className='PlayerNameh1'>Please Enter the Player Names</h1>
       <h2 className="playernameh2">Player 1 Name:</h2>
       <input

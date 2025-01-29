@@ -6,12 +6,16 @@
     justify-content: space-between; /* İçeriklerin yerleşimini kontrol eder */
   }
   
-  .tankimagePlayerSelection {
+  .tankimageplayerselection {
     opacity: 0.6;
     width: 100%;
-    height: 45.5em;
-    position: relative;
-  }
+    height: 100vh; /* Ekran yüksekliğini tamamen kaplar */
+    position: absolute; /* Sabit yerine absolute kullanıldı */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Fotoğrafın içeriğin arkasında kalmasını sağlar */
+}
+
   
   .PlayerSelection {
     text-align: center;
