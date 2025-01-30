@@ -15,6 +15,7 @@ body {
 
 .LoginButton {
     background-color: rgba(255, 255, 255, 0.13);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(10px);
@@ -27,7 +28,7 @@ body {
     color: aliceblue;
     z-index: 1; /* Buton ön planda */
     font-size: 2em;
-    width: 5em;
+    width: 6em;
     height: 1.3em; /* Buton boyutunu ayarladım */ 
     top: 20%; /* Fotoğrafın üst kısmına 20px mesafe */
     left: 70%; /* Ortalayabilmek için */
@@ -37,6 +38,8 @@ body {
 
 .SoloButton{
     background-color: rgba(255, 255, 255, 0.13);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
     position: absolute;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(10px);
@@ -49,7 +52,7 @@ body {
     color: aliceblue;
     z-index: 1; /* Buton ön planda */
     font-size: 2em;
-    width: 5em;
+    width: 6em;
     height: 1.3em; /* Buton boyutunu ayarladım */ 
     position: absolute; /* Butonun konumunu sabitliyoruz */
     top: 30%; /* Fotoğrafın üst kısmına 20px mesafe */
@@ -59,22 +62,22 @@ body {
     padding-right: 2%;
 }
 
-.TwoPlayerButton{
+.TwoPlayerButtonn{
     background-color: rgba(255, 255, 255, 0.13);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
     position: absolute;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
     z-index: 1;
-    text-align: center;
     border-radius: 20px;
-    text-decoration: none;
     color: aliceblue;
     z-index: 1; /* Buton ön planda */
     font-size: 2em;
-    width: 5em;
-    height: 2.4em; /* Buton boyutunu ayarladım */ 
+    width: 8em;
+    height: 2em; /* Buton boyutunu ayarladım */ 
     position: absolute; /* Butonun konumunu sabitliyoruz */
     top: 40%; /* Fotoğrafın üst kısmına 20px mesafe */
     left: 70%; /* Ortalayabilmek için */
@@ -87,6 +90,8 @@ body {
 
 .SettingsButton{
     background-color: rgba(255, 255, 255, 0.13);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
     position: absolute;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(10px);
@@ -99,10 +104,10 @@ body {
     color: aliceblue;
     z-index: 1; /* Buton ön planda */
     font-size: 2em;
-    width: 5em;
+    width: 6em;
     height: 1.3em; /* Buton boyutunu ayarladım */ 
     position: absolute; /* Butonun konumunu sabitliyoruz */
-    top: 55%; /* Fotoğrafın üst kısmına 20px mesafe */
+    top: 60%; /* Fotoğrafın üst kısmına 20px mesafe */
     left: 70%; /* Ortalayabilmek için */
     transform: translateX(-50%); /* Gerçekten ortalamak için */ 
     padding-left: 2%;

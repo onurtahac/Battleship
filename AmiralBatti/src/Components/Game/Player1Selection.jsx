@@ -78,12 +78,33 @@ export default function Player1Selection({ onNext, playerName }) {
   // Diğer fonksiyonlar ve render işlemleri...
   const placeUnit = (unit, cells) => {
     if (cells.some((cell) => selectedCells.includes(cell))) return;
-
-    setUnitPlacements((prev) => {
-      return { ...prev, [unit]: cells };
+  
+    // Sıralama yaparak başlangıç hücresini belirleyelim
+    const sortedCells = cells.sort((a, b) => {
+      const rowA = parseInt(a.substring(1));
+      const rowB = parseInt(b.substring(1));
+      const colA = a.charCodeAt(0);
+      const colB = b.charCodeAt(0);
+  
+      if (rowA === rowB) {
+        return colA - colB; // Aynı satırdaysa sütuna göre sırala
+      }
+      return rowA - rowB; // Farklı satırdaysa satıra göre sırala
     });
+  
+    const startCell = sortedCells[0]; // İlk hücre başlangıç noktasıdır
+    const secondCell = sortedCells[1]; // İkinci hücre yönü belirlemek için kullanılacak
+  
+    const isVertical = secondCell ? secondCell[0] === startCell[0] : false; // Eğer ikinci hücre aynı sütundaysa dikeydir
+  
+    setUnitPlacements((prev) => ({
+      ...prev,
+      [unit]: { length: cells.length, coordinates: [startCell], isVertical },
+    }));
+  
     setSelectedCells([...selectedCells, ...cells]);
   };
+  
 
   const selectUnit = (unit, size) => {
     if (unitSelected[unit]) return;
@@ -97,9 +118,37 @@ export default function Player1Selection({ onNext, playerName }) {
     setRemainingCells(size);
   };
 
-  const handleContinue = () => {
-    navigate("/Player2Selection");
+  const handleContinue = async () => {
+    const shipsData = Object.values(unitPlacements); // JSON formatında gemileri al
+  
+    const payload = {
+      gameId: gameId, // Oyun ID'si
+      userId: userId, // Kullanıcı ID'si
+      ships: shipsData, // Gemileri JSON formatına uygun gönder
+    };
+  
+    try {
+      const response = await fetch("https://localhost:7200/api/Game/setup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+  
+      if (response.ok) {
+        alert("Gemi konumları başarıyla kaydedildi!");
+        navigate("/Player2Selection");
+      } else {
+        const errorData = await response.json();
+        alert(`Hata oluştu: ${errorData.message}`);
+      }
+    } catch (error) {
+      console.error("Error sending ship placements:", error);
+      alert("Sunucuya bağlanırken hata oluştu.");
+    }
   };
+  
 
   const renderGrid = () => {
     const grid = [];

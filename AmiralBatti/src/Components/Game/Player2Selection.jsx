@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import './PlayerSelection.css';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import "./PlayerSelection.css";
+import { useNavigate } from "react-router-dom";
 
-export default function Player1Selection({ onNext, playerName }) {
+export default function Player2Selection({ onNext, playerName }) {
   const [timer, setTimer] = useState(90);
-  const [selectedCells, setSelectedCells] = useState([]); // Seçilen karelerin tutulduğu dizi
-  const [unitPlacements, setUnitPlacements] = useState({}); // Birliklerin yerleştirildiği hücreler
-  const [currentUnit, setCurrentUnit] = useState(null); // Şu anki seçili birlik
-  const [remainingCells, setRemainingCells] = useState(0); // Kalan hücre sayısı
-  const [unitSelected, setUnitSelected] = useState({}); // Birliklerin seçilip seçilmediğini takip et
+  const [selectedCells, setSelectedCells] = useState([]);
+  const [unitPlacements, setUnitPlacements] = useState({});
+  const [currentUnit, setCurrentUnit] = useState(null);
+  const [remainingCells, setRemainingCells] = useState(0);
+  const [unitSelected, setUnitSelected] = useState({});
+  const [gameId, setGameId] = useState(null);
+  const [userId, setUserId] = useState(6); // Player 2 ID'si fix olarak 6
   const navigate = useNavigate();
+
   useEffect(() => {
     if (timer > 0) {
       const countdown = setInterval(() => setTimer(timer - 1), 1000);
@@ -17,71 +20,76 @@ export default function Player1Selection({ onNext, playerName }) {
     }
   }, [timer]);
 
-  // Birlik yerleştirme fonksiyonu
-  const placeUnit = (unit, cells) => {
-    // Birlik zaten yerleştirildiyse, aynı hücrelere yerleştirilemez
-    if (cells.some(cell => selectedCells.includes(cell))) return;
-
-    setUnitPlacements((prev) => {
-      return { ...prev, [unit]: cells };
-    });
-    setSelectedCells([...selectedCells, ...cells]); // Seçilen hücrelere yeni hücreler ekle
-  };
-
-  // Birlik seçme
-  const selectUnit = (unit, size) => {
-    if (unitSelected[unit]) return; // Eğer bu birlik daha önce seçildiyse, işlem yapılmasın
-
-    setUnitSelected((prev) => ({
-      ...prev,
-      [unit]: true, // Bu birliği seçildi olarak işaretle
-    }));
-
-    setCurrentUnit(unit); // Seçili birliği güncelle
-    setRemainingCells(size); // Seçilecek hücre sayısını güncelle
-  };
-
   const handleCellClick = (cell) => {
-    if (!currentUnit || remainingCells <= 0) return; // Eğer bir birlik seçilmemişse veya yerleştirilecek hücre kalmamışsa işlem yapma
+    if (!currentUnit || remainingCells <= 0) return;
+    const row = parseInt(cell.substring(1));
+    const col = cell.charCodeAt(0) - 64;
+    setSelectedCells((prevSelected) => [...prevSelected, cell]);
+    setRemainingCells(remainingCells - 1);
 
-    // Seçilen hücreyi ekle
-    setSelectedCells((prevSelected) => {
-      const newSelected = [...prevSelected, cell];
-      return newSelected;
-    });
-
-    // Birliği yerleştir
-    setRemainingCells(remainingCells - 1); // Kalan hücreyi azalt
-
-    // Birlik tüm hücreler yerleştirildiyse, onu kaydet
     if (remainingCells === 1) {
       placeUnit(currentUnit, [...selectedCells, cell]);
-      setCurrentUnit(null); // Seçili birliği sıfırla
+      setCurrentUnit(null);
     }
   };
 
-  const handleContinue = () => {
+  const placeUnit = (unit, cells) => {
+    if (cells.some((cell) => selectedCells.includes(cell))) return;
+    const sortedCells = cells.sort((a, b) => {
+      const rowA = parseInt(a.substring(1));
+      const rowB = parseInt(b.substring(1));
+      const colA = a.charCodeAt(0);
+      const colB = b.charCodeAt(0);
+      return rowA === rowB ? colA - colB : rowA - rowB;
+    });
+    const startCell = sortedCells[0];
+    const secondCell = sortedCells[1];
+    const isVertical = secondCell ? secondCell[0] === startCell[0] : false;
+    setUnitPlacements((prev) => ({
+      ...prev,
+      [unit]: { length: cells.length, coordinates: [startCell], isVertical },
+    }));
+    setSelectedCells([...selectedCells, ...cells]);
+  };
 
-      navigate('/TwoPlayerGame'); // Yönlendirme işlemi
+  const selectUnit = (unit, size) => {
+    if (unitSelected[unit]) return;
+    setUnitSelected((prev) => ({ ...prev, [unit]: true }));
+    setCurrentUnit(unit);
+    setRemainingCells(size);
+  };
 
+  const handleContinue = async () => {
+    const shipsData = Object.values(unitPlacements);
+    const payload = { gameId, userId, ships: shipsData };
+    try {
+      const response = await fetch("https://localhost:7200/api/Game/setup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (response.ok) {
+        alert("Gemi konumları başarıyla kaydedildi!");
+        navigate("/GameStart");
+      } else {
+        const errorData = await response.json();
+        alert(`Hata oluştu: ${errorData.message}`);
+      }
+    } catch (error) {
+      console.error("Error sending ship placements:", error);
+      alert("Sunucuya bağlanırken hata oluştu.");
+    }
   };
 
   const renderGrid = () => {
     const grid = [];
     for (let row = 1; row <= 10; row++) {
       for (let col = 1; col <= 10; col++) {
-        const cell = `${String.fromCharCode(64 + col)}${row}`; // Hücre adı örn: A1, B2
-        const isSelected = selectedCells.includes(cell);
-        const isUnitCell = (unit) => unitPlacements[unit]?.includes(cell);
-
+        const cell = `${String.fromCharCode(64 + col)}${row}`;
         grid.push(
           <div
             key={cell}
-            className={`cell ${isSelected ? 'selected' : ''} 
-                        ${isUnitCell('Yellow') ? 'yellow-unit' : ''} 
-                        ${isUnitCell('Green') ? 'green-unit' : ''} 
-                        ${isUnitCell('Blue') ? 'blue-unit' : ''} 
-                        ${isUnitCell('Red') ? 'red-unit' : ''}`}
+            className={`cell ${selectedCells.includes(cell) ? "selected" : ""}`}
             onClick={() => handleCellClick(cell)}
           >
             {cell}
@@ -93,24 +101,22 @@ export default function Player1Selection({ onNext, playerName }) {
   };
 
   return (
-    <div className="PlayerSelection">
-            <img className='tankimageplayerselection' src="Public/Photos/Tanks2.jpeg" alt="" />
-
-      <div className="left-panel">
-        <h2 className='playernameh2'>{playerName} İçin Seçim Ekranı</h2>
-        <div className="unit-list">
-          <div onClick={() => selectUnit('Yellow', 3)} className="unit">Sarı Birlik (3)</div>
-          <div onClick={() => selectUnit('Green', 3)} className="unit">Yeşil Birlik (3)</div>
-          <div onClick={() => selectUnit('Blue', 4)} className="unit">Mavi Birlik (4)</div>
-          <div onClick={() => selectUnit('Red', 5)} className="unit">Kırmızı Birlik (5)</div>
+    <div className="PlayerSelectionWrapper">
+      <div className="PlayerSelection">
+        <img className="tankimageplayerselection" src="Public/Photos/Tanks2.jpeg" alt="" />
+        <div className="left-panel">
+          <h2 className="playernameh2">{playerName} İçin Seçim Ekranı</h2>
+          <div className="unit-list">
+            <div onClick={() => selectUnit("Yellow", 3)} className="unit">Leopard 2A4(3)</div>
+            <div onClick={() => selectUnit("Green", 3)} className="unit">T-90MS (3)</div>
+            <div onClick={() => selectUnit("Blue", 4)} className="unit">Challenger 2 (4)</div>
+            <div onClick={() => selectUnit("Red", 5)} className="unit">Leopard 2A4(5)</div>
+          </div>
         </div>
-      </div>
-
-      <div className="right-panel">
-        <div className="game-grid">{renderGrid()}</div>
-        <button className='PlayerSelectionButton' onClick={handleContinue} >
-          Devam Et
-        </button>
+        <div className="right-panel">
+          <div className="game-grid">{renderGrid()}</div>
+          <button className="PlayerSelectionButton" onClick={handleContinue}>Devam Et</button>
+        </div>
       </div>
     </div>
   );

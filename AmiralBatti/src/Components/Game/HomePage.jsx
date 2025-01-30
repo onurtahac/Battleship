@@ -40,8 +40,8 @@ export default function HomePage() {
       <img className='tankimage' src="Public/Photos/tank.jpeg" alt="" />
       <a href='Login' className='LoginButton'>Login</a>
       <a href='#' className='SoloButton'>Solo Game</a>
-      <button onClick={handleTwoPlayerGame} className='TwoPlayerButton'>
-        Two Players Game
+      <button onClick={handleTwoPlayerGame} className='TwoPlayerButtonn'>
+        Multiple Game
       </button>
       <a href='#' className='SettingsButton'>Settings</a>
     </div>
