@@ -1,3 +1,17 @@
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\bin\Debug\net8.0\BattleshipAPI.Domain.deps.json
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\bin\Debug\net8.0\BattleshipAPI.Domain.runtimeconfig.json
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\bin\Debug\net8.0\BattleshipAPI.Domain.dll
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\bin\Debug\net8.0\BattleshipAPI.Domain.pdb
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\obj\Debug\net8.0\BattleshipAPI.Domain.csproj.AssemblyReference.cache
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\obj\Debug\net8.0\BattleshipAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\obj\Debug\net8.0\BattleshipAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\obj\Debug\net8.0\BattleshipAPI.Domain.AssemblyInfo.cs
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\obj\Debug\net8.0\BattleshipAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\obj\Debug\net8.0\BattleshipAPI.Domain.dll
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\obj\Debug\net8.0\refint\BattleshipAPI.Domain.dll
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\obj\Debug\net8.0\BattleshipAPI.Domain.pdb
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\obj\Debug\net8.0\BattleshipAPI.Domain.genruntimeconfig.cache
+C:\Users\Onur\OneDrive\Masaüstü\Battleship API\Core\BattleshipAPI.Domain\obj\Debug\net8.0\ref\BattleshipAPI.Domain.dll
 C:\Users\Onur\source\repos\Battleship API\Core\BattleshipAPI.Domain\bin\Debug\net8.0\BattleshipAPI.Domain.deps.json
 C:\Users\Onur\source\repos\Battleship API\Core\BattleshipAPI.Domain\bin\Debug\net8.0\BattleshipAPI.Domain.runtimeconfig.json
 C:\Users\Onur\source\repos\Battleship API\Core\BattleshipAPI.Domain\bin\Debug\net8.0\BattleshipAPI.Domain.dll

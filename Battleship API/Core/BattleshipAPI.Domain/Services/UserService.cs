@@ -66,6 +66,11 @@ namespace BattleshipAPI.Domain.Services
         {
             return await _userRepository.GetUserByEmailIdAsync(email);
         }
+
+        public async Task<User?> GetUserByUserNameAsync(string userName)
+        {
+            return await _userRepository.GetByUserNameAsync(userName);
+        }
     }
 }
 

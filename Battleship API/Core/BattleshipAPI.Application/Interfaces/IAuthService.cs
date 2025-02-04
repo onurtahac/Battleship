@@ -1,9 +1,5 @@
 ﻿using BattleshipAPI.Application.DTOs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
  
 namespace BattleshipAPI.Application.Interfaces
 {
@@ -11,5 +7,8 @@ namespace BattleshipAPI.Application.Interfaces
     {
         Task<AuthResult> LoginAsync(string email, string password);
         Task<AuthResult> RegisterAsync(RegisterDTO dto);
+        Task<AuthResult> GetUserInfo(string userName);
+
+
     }
 }

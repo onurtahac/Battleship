@@ -19,6 +19,39 @@ namespace BattleshipAPI.Application.Services
             _tokenService = tokenService;
         }
 
+        public async Task<AuthResult> GetUserInfo(string userName)
+        {
+            try
+            {
+                var userDto = new UserDTO { Name = userName }; // UserDTO nesnesi oluşturuluyor
+
+                var user = await _userAppService.GetByUserNameAsync(userDto);
+
+                if (user == null)
+                {
+                    return new AuthResult
+                    {
+                        Success = false,
+                        Errors = new List<string> { "Kullanıcı bulunamadı." }
+                    };
+                }
+
+                return new AuthResult
+                {
+                    Success = true,
+                    UserName = userName // Kullanıcı bilgisi başarıyla dönüyor
+                };
+            }
+            catch (Exception ex)
+            {
+                return new AuthResult
+                {
+                    Success = false,
+                    Errors = new List<string> { $"Bir hata oluştu: {ex.Message}" }
+                };
+            }
+        }
+
         public async Task<AuthResult> LoginAsync(string email, string password)
         {
             // Kullanıcıyı e-posta ile bul
@@ -36,7 +69,7 @@ namespace BattleshipAPI.Application.Services
                 EmailAdress=email 
             };
 
-            var token = _tokenService.GenerateToken(newlogin, user.role);
+            var token = _tokenService.GenerateToken(newlogin, user.role, user.UserId);
 
             return new AuthResult
             {
@@ -76,9 +109,12 @@ namespace BattleshipAPI.Application.Services
 
             // Kullanıcıyı kaydet
             await _userAppService.AddUserAsync(newUser);
-            var token = _tokenService.GenerateToken(newLoginRequest, newUser.role);
+            var token = _tokenService.GenerateToken(newLoginRequest, newUser.role, newUser.UserId);
             var refreshToken= _tokenService.GenerateRefreshToken();
             return new AuthResult { Success = true, Token = token, RefreshToken = refreshToken.Token };
         }
+
+
+
     }
 }

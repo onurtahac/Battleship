@@ -10,8 +10,7 @@ namespace BattleshipAPI.Application.Interfaces
 {
     public interface ITokenService
     {
-        string GenerateToken(LoginRequestDTO loginRequestDto, string role);
+        string GenerateToken(LoginRequestDTO loginRequestDto, string role, int UserId);
         RefreshToken GenerateRefreshToken();
-
     }
 }

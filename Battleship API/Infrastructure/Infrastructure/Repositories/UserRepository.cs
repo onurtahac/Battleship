@@ -61,5 +61,11 @@ namespace BattleshipAPI.Infrastructure.Repositories
             return await _context.Users
                 .FirstOrDefaultAsync(u => u.Email == email);
         }
+
+        public async Task<User?> GetByUserNameAsync(string userName)
+        {
+            // userName'e göre kullanıcıyı veritabanından asenkron olarak buluyoruz
+            return await _context.Users.FirstOrDefaultAsync(u => u.Name == userName);
+        }
     }
 }

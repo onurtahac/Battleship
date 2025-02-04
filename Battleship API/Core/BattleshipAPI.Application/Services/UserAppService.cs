@@ -4,6 +4,7 @@ using BattleshipAPI.Application.Interfaces;
 using BattleshipAPI.Domain.Entites;
 using BattleshipAPI.Domain.Entities;
 using BattleshipAPI.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace BattleshipAPI.Application.Services
 {
     public class UserAppService : IUserAppService
     {
+
         private readonly IUserService _userService;
         private readonly IMapper _mapper;
 
@@ -49,6 +51,29 @@ namespace BattleshipAPI.Application.Services
             }
         }
 
+        public async Task<UserDTO?> GetByUserNameAsync(UserDTO userDto)
+        {
+            try
+            {
+                // UserService içindeki GetUserByUserNameAsync metodunu çağır
+                var user = await _userService.GetUserByUserNameAsync(userDto.Name);
+
+                // Eğer kullanıcı yoksa null döndür
+                if (user == null)
+                {
+                    return null;
+                }
+
+                // User -> UserDTO dönüşümü yap ve döndür
+                return _mapper.Map<UserDTO>(user);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error retrieving user by username: {ex.Message}");
+                return null;
+            }
+        }
+
         public async Task<IEnumerable<UserDTO>> GetAllUsersAsync()
         {
             try
@@ -76,6 +101,9 @@ namespace BattleshipAPI.Application.Services
                 return null;
             }
         }
+
+
+
 
         public async Task<UserDTO> GetUserByEmailIdAsync(string email)
         {
@@ -105,6 +133,9 @@ namespace BattleshipAPI.Application.Services
                 return null;
             }
         }
+
+        
+
 
         public async Task<string> LoginAsync(string email, string password)
         {

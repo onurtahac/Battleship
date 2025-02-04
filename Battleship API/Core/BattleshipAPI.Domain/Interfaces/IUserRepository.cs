@@ -11,5 +11,6 @@ namespace BattleshipAPI.Domain.Interfaces
         Task<bool> UpdateUserAsync(User user);
         Task<bool> DeleteUserAsync(int userId);
         Task<User> GetUserByEmailIdAsync(string email);
+        Task<User?> GetByUserNameAsync(string userName);
     }
 }
