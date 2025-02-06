@@ -21,6 +21,8 @@ namespace BattleshipAPI.Domain.Services
             return await _userRepository.AddUserAsync(user);
         }
 
+
+
         public async Task<User> GetUserByEmailAndPasswordAsync(string email, string password)
         {
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
@@ -71,6 +73,12 @@ namespace BattleshipAPI.Domain.Services
         {
             return await _userRepository.GetByUserNameAsync(userName);
         }
+
+        public async Task<User> GetByUserNameAsync(string name)
+        {
+            return await _userRepository.GetByUserNameAsync(name);
+        }
+
     }
 }
 

@@ -19,38 +19,7 @@ namespace BattleshipAPI.Application.Services
             _tokenService = tokenService;
         }
 
-        public async Task<AuthResult> GetUserInfo(string userName)
-        {
-            try
-            {
-                var userDto = new UserDTO { Name = userName }; // UserDTO nesnesi oluşturuluyor
-
-                var user = await _userAppService.GetByUserNameAsync(userDto);
-
-                if (user == null)
-                {
-                    return new AuthResult
-                    {
-                        Success = false,
-                        Errors = new List<string> { "Kullanıcı bulunamadı." }
-                    };
-                }
-
-                return new AuthResult
-                {
-                    Success = true,
-                    UserName = userName // Kullanıcı bilgisi başarıyla dönüyor
-                };
-            }
-            catch (Exception ex)
-            {
-                return new AuthResult
-                {
-                    Success = false,
-                    Errors = new List<string> { $"Bir hata oluştu: {ex.Message}" }
-                };
-            }
-        }
+     
 
         public async Task<AuthResult> LoginAsync(string email, string password)
         {

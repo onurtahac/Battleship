@@ -7,7 +7,6 @@ namespace BattleshipAPI.Application.Interfaces
     {
         Task<AuthResult> LoginAsync(string email, string password);
         Task<AuthResult> RegisterAsync(RegisterDTO dto);
-        Task<AuthResult> GetUserInfo(string userName);
 
 
     }

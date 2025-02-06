@@ -4,6 +4,7 @@ using BattleshipAPI.Application.Interfaces;
 using BattleshipAPI.Domain.Entites;
 using BattleshipAPI.Domain.Entities;
 using BattleshipAPI.Domain.Interfaces;
+using BattleshipAPI.Domain.Services;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,36 @@ namespace BattleshipAPI.Application.Services
             _userService = userService;
             _mapper = mapper;
         }
+
+
+        public async Task<string> GetUserInfo(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                return "Geçersiz e-posta adresi.";
+            }
+
+            try
+            {
+                // E-posta adresine göre kullanıcıyı alıyoruz
+                var user = await _userService.GetUserByEmailIdAsync(email);
+
+                // Eğer kullanıcı bulunduysa, AutoMapper ile User nesnesini UserDTO'ya dönüştürüyoruz
+                UserDTO userDto = _mapper.Map<UserDTO>(user);
+
+                return userDto?.Name ?? "Kullanıcı sistemde kayıtlı değil.";
+            }
+            catch (Exception ex)
+            {
+                return $"Hata: {ex.Message}";
+            }
+        }
+
+
+
+
+
+
 
         public async Task<bool> AddUserAsync(UserDTO user)
         {
@@ -51,12 +82,12 @@ namespace BattleshipAPI.Application.Services
             }
         }
 
-        public async Task<UserDTO?> GetByUserNameAsync(UserDTO userDto)
+        public async Task<UserDTO?> GetByUserNameAsync(string name)
         {
             try
             {
                 // UserService içindeki GetUserByUserNameAsync metodunu çağır
-                var user = await _userService.GetUserByUserNameAsync(userDto.Name);
+                var user = await _userService.GetUserByUserNameAsync(name);
 
                 // Eğer kullanıcı yoksa null döndür
                 if (user == null)
@@ -188,5 +219,7 @@ namespace BattleshipAPI.Application.Services
                 return false;
             }
         }
+
+       
     }
 }
